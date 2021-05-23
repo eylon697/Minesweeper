@@ -1,0 +1,138 @@
+table {
+    display: block;
+    border-spacing: 0px;
+}
+
+.expert {
+    height: 36px;
+    width: 36px;
+    font-size: 25px;
+}
+
+.medium {
+    height: 56px;
+    width: 56px;
+    font-size: 40px;
+}
+
+.begginer {
+    height: 116px;
+    width: 116px;
+    font-size: 70px;
+}
+
+td {
+    color: rgb(61, 159, 192);
+    border-collapse: unset;
+    padding: 2px;
+    font-size: 20px;
+    font-weight: 999;
+    text-align: center;
+}
+
+td.bright {
+    background-color: rgb(170, 226, 85)
+}
+
+td.dark {
+    background-color: rgb(158, 214, 73);
+}
+
+td.bright:hover {
+    cursor: pointer;
+    background-color: rgba(175, 218, 112, 0.795);
+}
+
+td.dark:hover {
+    cursor: pointer;
+    background-color: rgba(175, 218, 112, 0.795);
+}
+
+td.bright.shown {
+    cursor: default;
+    background-color: rgb(247, 206, 130);
+    border: none;
+}
+
+td.dark.shown {
+    cursor: default;
+    background-color: rgb(235, 190, 108);
+    border: none;
+}
+
+td.bright.hint {
+    background-color: rgb(204, 169, 103);
+}
+
+td.dark.hint {
+    background-color: rgb(199, 161, 90);
+}
+
+td .flag {
+    display: block;
+}
+
+td .content {
+    display: none;
+}
+
+.alert .content {
+    display: block;
+    background-color: red;
+}
+
+.alert2 .content {
+    display: block;
+    background-color: rgb(253, 136, 2);
+}
+
+.activated .content {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: block;
+}
+
+.shown .content {
+    display: block;
+}
+
+.hint .content {
+    display: block;
+}
+
+.two {
+    color: rgb(26, 136, 26);
+}
+
+.three {
+    color: rgb(241, 34, 34);
+}
+
+.four {
+    color: blue;
+}
+
+.five {
+    color: rgb(253, 136, 2);
+}
+
+.six {
+    color: orchid;
+}
+
+.seven {
+    color: purple;
+}
+
+.eight {
+    color: sienna;
+}
+
+.dark.safe {
+    background-color: rgb(87, 169, 224);
+}
+
+.bright.safe {
+    background-color: rgb(87, 169, 224);
+}

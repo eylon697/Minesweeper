@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="icon" href="img/redFlag.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/list.css">
+</head>
+
+<body onload="init({ size: 8, mines: 12 })">
+    <div class="top-header">Minesweeper</div>
+    <div class="game-zone">
+
+        <div class="header">
+            <div class="emoji"><span class="emoji-span"></span></div>
+            <div class="lives"></div>
+            <div clasS="undo" onclick="undo()"><span>UNDO</span></div>
+
+            <div class="manual"><span onclick="manualClicked(gLevel)">Manual</span></div>
+            <div class="list">
+                <ul class="nav">
+                    <li>
+                        <a class="title-list">Level</a>
+                        <ul>
+                            <li class="opt1"><a onclick="init({ size: 4, mines: 2 })">Begginer</a></li>
+                            <li class="opt2"><a onclick="init({ size: 8, mines: 12 })">Medium</a></li>
+                            <li class="opt3"><a onclick="init({ size: 12, mines: 30 })">Expert</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="board-container"></div>
+        <div class="footer">
+            <div class="best-score">
+                <span class="best-min-span"></span><span class="best-mid-span"></span><span class="best-sec-span"></span>
+                <span class="best-title">Best score</span>
+            </div>
+            <div class="timer"><span class="container"><span id="mm">00</span>:<span id="ms">00</span></div>
+            <div class="hints"><span class="hints-container"></span></div>
+            <div class="safe-clicks"><span class="safe-clicks-container"></span></div>
+        </div>
+        <span class="autor">Eylon Toren</span>
+
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/features.js"></script>
+</body>
+
+</html>
